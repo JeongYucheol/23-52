@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Formik }                     from 'formik';
 import S                              from './styles';
 import NS from './nstyles';
+import Notifications, {notify} from 'react-notify-toast';
 import Success                        from './Success';
 import Failed                         from './Failed';
 import Stopwatch                      from '../../lib/Stopwatch';
@@ -40,7 +41,8 @@ const Room = ({ data }) => {
       next();
       resetForm();
     } else {
-      alert('틀렸습니다. 다시 풀어보세요');
+      console.log('noty', notify);
+      notify.show('틀렸습니다. 다시 풀어보세요', 'error', 2000, {text: 'white'});
       resetForm();
     }
   }
@@ -83,6 +85,7 @@ const Room = ({ data }) => {
 
   return (
     <>
+      <Notifications />
       {
         data.roomStyle === 'basic' &&
           <S.Wrapper coverUrl={step.image}>
