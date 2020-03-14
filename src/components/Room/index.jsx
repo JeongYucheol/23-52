@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Formik }                     from 'formik';
 import S                              from './styles';
+import NS from './nstyles';
 import Success                        from './Success';
 import Failed                         from './Failed';
 import Stopwatch                      from '../../lib/Stopwatch';
@@ -81,77 +82,156 @@ const Room = ({ data }) => {
   if (!data) return null;
 
   return (
-    <S.Wrapper coverUrl={step.image}>
+    <>
       {
-        onSuccess &&
-        <Success
-          data         = {data.successView}
-          completeTime = {leftTime}
-        />
-      }
-      {
-        onFailed &&
-        <Failed
-          data={data.failView}
-        />
-      }
-      <S.Count>
-        {
-          (!onSuccess && !onFailed) &&
-          <Stopwatch
-            currentTime = {(time, rawTime) => setLeftTime({...time, raw: rawTime})}
-            time        = {log ? Number(log.leftTime.raw) : data.limit * 60}
-          />
+        data.roomStyle === 'basic' &&
+          <S.Wrapper coverUrl={step.image}>
+            {
+              onSuccess &&
+              <Success
+                data         = {data.successView}
+                completeTime = {leftTime}
+              />
+            }
+            {
+              onFailed &&
+              <Failed
+                data={data.failView}
+              />
+            }
+            <S.Count>
+              {
+                (!onSuccess && !onFailed) &&
+                <Stopwatch
+                  currentTime = {(time, rawTime) => setLeftTime({...time, raw: rawTime})}
+                  time        = {log ? Number(log.leftTime.raw) : data.limit * 60}
+                />
+              }
+            </S.Count>
+            <S.Item>
+              <S.Question>
+                <img src={step.question}/>
+              </S.Question>
+              <S.TextBox>
+                <S.Text>{step.text}</S.Text>
+                <S.NextActions>
+                  {
+                    !!step.input.length &&
+                      <Formik
+                        initialValues={{ answer: '' }}
+                        onSubmit={(values, { resetForm, ...actions }) => {
+
+                          setTimeout(() => {
+                            confirmAnswer(values.answer, resetForm);
+                            actions.setSubmitting(false);
+                          }, 1000);
+                        }}
+                      >
+                        { ({resetForm, ...props}) =>(
+                          <S.Form onSubmit={props.handleSubmit}>
+                            { step.input.map((inputInfo, i) => (
+                              <input
+                                key      = {i}
+                                type     = {inputInfo.type}
+                                onChange = {props.handleChange}
+                                onBlur   = {props.handleBlur}
+                                value    = {props.values.answer}
+                                name     = "answer"
+                              />
+                            ))}
+                            {props.errors.name && <div id="feedback">{props.errors.name}</div>}
+                            <button type="submit">입력</button>
+                          </S.Form>
+                        )
+                      }
+                      </Formik>
+                  }
+                  {
+                    !step.input.length &&
+                    <S.Button onClick={next}>다음</S.Button>
+                  }
+                </S.NextActions>
+              </S.TextBox>
+
+            </S.Item>
+
+          </S.Wrapper> 
         }
-      </S.Count>
-      <S.Item>
-        <S.Question>
-          <img src={step.question}/>
-        </S.Question>
-        <S.TextBox>
-          <S.Text>{step.text}</S.Text>
-          <S.NextActions>
+        {
+          data.roomStyle === 'nature' &&
+          <NS.Wrapper coverUrl={step.image}>
             {
-              !!step.input.length &&
-                <Formik
-                  initialValues={{ answer: '' }}
-                  onSubmit={(values, { resetForm, ...actions }) => {
-
-                    setTimeout(() => {
-                      confirmAnswer(values.answer, resetForm);
-                      actions.setSubmitting(false);
-                    }, 1000);
-                  }}
-                >
-                  { ({resetForm, ...props}) =>(
-                    <S.Form onSubmit={props.handleSubmit}>
-                      { step.input.map((inputInfo, i) => (
-                        <input
-                          key      = {i}
-                          type     = {inputInfo.type}
-                          onChange = {props.handleChange}
-                          onBlur   = {props.handleBlur}
-                          value    = {props.values.answer}
-                          name     = "answer"
-                        />
-                      ))}
-                      {props.errors.name && <div id="feedback">{props.errors.name}</div>}
-                      <button type="submit">입력</button>
-                    </S.Form>
-                  )
-                }
-                </Formik>
+              onSuccess &&
+              <Success
+                data         = {data.successView}
+                completeTime = {leftTime}
+              />
             }
             {
-              !step.input.length &&
-              <S.Button onClick={next}>다음</S.Button>
+              onFailed &&
+              <Failed
+                data={data.failView}
+              />
             }
-          </S.NextActions>
-        </S.TextBox>
+            <NS.Count>
+              {
+                (!onSuccess && !onFailed) &&
+                <Stopwatch
+                  currentTime = {(time, rawTime) => setLeftTime({...time, raw: rawTime})}
+                  time        = {log ? Number(log.leftTime.raw) : data.limit * 60}
+                />
+              }
+            </NS.Count>
+            <NS.Item>
+              <NS.Question>
+                <img src={step.question}/>
+              </NS.Question>
+              <NS.TextBox>
+                <NS.Text>{step.text}</NS.Text>
+                <NS.NextActions>
+                  {
+                    !!step.input.length &&
+                      <Formik
+                        initialValues={{ answer: '' }}
+                        onSubmit={(values, { resetForm, ...actions }) => {
 
-      </S.Item>
+                          setTimeout(() => {
+                            confirmAnswer(values.answer, resetForm);
+                            actions.setSubmitting(false);
+                          }, 1000);
+                        }}
+                      >
+                        { ({resetForm, ...props}) =>(
+                          <NS.Form onSubmit={props.handleSubmit}>
+                            { step.input.map((inputInfo, i) => (
+                              <input
+                                key      = {i}
+                                type     = {inputInfo.type}
+                                onChange = {props.handleChange}
+                                onBlur   = {props.handleBlur}
+                                value    = {props.values.answer}
+                                name     = "answer"
+                              />
+                            ))}
+                            {props.errors.name && <div id="feedback">{props.errors.name}</div>}
+                            <button type="submit">입력</button>
+                          </NS.Form>
+                        )
+                      }
+                      </Formik>
+                  }
+                  {
+                    !step.input.length &&
+                    <NS.Button onClick={next}>다음</NS.Button>
+                  }
+                </NS.NextActions>
+              </NS.TextBox>
 
-    </S.Wrapper>
+            </NS.Item>
+
+          </NS.Wrapper>          
+        }
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 [
 	{
 		"_id": "room01",
+		"roomStyle": "basic",
 		"escape": 0,
 		"failView": {
 			"buttons": [
@@ -95,6 +96,7 @@
 	},
 	{
 		"_id": "room02",
+		"roomStyle": "nature",
 		"escape": 10,
 		"joined": 15,
 		"limit": 60,

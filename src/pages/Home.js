@@ -13,6 +13,8 @@ const Home = () => {
 
   }, []);
 
+  console.log('test');
+
   if (!rooms) return null;
 
   return (
