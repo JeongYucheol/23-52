@@ -28,7 +28,7 @@ const Header = (props) => {
 							23시52분
 						</S.Text>
 
-						<a href="https://www.instagram.com/23h52_/" target="_blank">
+						<a href="https://www.instagram.com/23h52m_/" target="_blank">
 							<S.Instagram>
 								<img src={instagram} />
 								<span>
