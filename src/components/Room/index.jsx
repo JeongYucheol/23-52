@@ -19,9 +19,9 @@ const Room = ({ data }) => {
   const step = steps[currentStep];
 
   const next = () => {
-    const questionTotal = steps.filter(step => step.answer).length;
+   
 
-    if (questionTotal === currentStep) {
+    if (currentStep === steps.length - 1) {
       setOnSuccess(true);
       setTimeout(() => {
         localStorage.removeItem(data._id);
