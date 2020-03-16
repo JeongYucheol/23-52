@@ -6,9 +6,9 @@
 		"failView": {
 			"buttons": [
 				{
-					"image": "https://github.com/JeongYucheol/23-52storage/blob/master/icons/kakao.png?raw=true",
+					"image": "https://github.com/JeongYucheol/23-52storage/blob/master/icons/instagram.png?raw=true",
 					"name": "failed",
-					"url": "http://pf.kakao.com/_Frkxjxb/chat"
+					"url": "https://www.instagram.com/23h52m_/"
 				}
 			],
 			"text": "따지러가기",
@@ -84,9 +84,9 @@
 		"successView": {
 			"buttons": [
 				{
-					"image": "https://github.com/JeongYucheol/23-52storage/blob/master/icons/kakao.png?raw=true",
+					"image": "https://github.com/JeongYucheol/23-52storage/blob/master/icons/instagram.png?raw=true",
 					"name": "success",
-					"url": "http://pf.kakao.com/_Frkxjxb/chat"
+					"url": "https://www.instagram.com/23h52m_/"
 				}
 			],
 			"text": "화면 캡쳐해서 자랑하기",
@@ -101,9 +101,9 @@
 		"failView": {
 			"buttons": [
 				{
-					"image": "https://github.com/JeongYucheol/23-52storage/blob/master/icons/kakao.png?raw=true",
+					"image": "https://github.com/JeongYucheol/23-52storage/blob/master/icons/instagram.png?raw=true",
 					"name": "failed",
-					"url": "http://pf.kakao.com/_Frkxjxb/chat"
+					"url": "https://www.instagram.com/23h52m_/"
 				}
 			],
 			"text": "따지러가기",
@@ -185,9 +185,9 @@
 		"successView": {
 			"buttons": [
 				{
-					"image": "https://github.com/JeongYucheol/23-52storage/blob/master/icons/kakao.png?raw=true",
+					"image": "https://github.com/JeongYucheol/23-52storage/blob/master/icons/instagram.png?raw=true",
 					"name": "success",
-					"url": "http://pf.kakao.com/_Frkxjxb/chat"
+					"url": "https://www.instagram.com/23h52m_/"
 				}
 			],
 
@@ -195,19 +195,8 @@
 			"title": "대단하군"
 		},
 		"thumbnail": "https://github.com/JeongYucheol/23-52storage/blob/master/images/thum2.jpg?raw=true"
-	},
-	{
-		"_id": "room03",
-		"roomStyle": "basic",
-		"escape": 0,
-		"joined": 0,
-		"limit": 30,
-		"name": "탈출3",
-		"state": "deactivated",
-		"steps": [],
-
-		"thumbnail": "https://github.com/JeongYucheol/23-52storage/blob/master/images/thum2.jpg?raw=true"
 	}
+
 
 
 
