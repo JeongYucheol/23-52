@@ -11,7 +11,7 @@
 					"url": "http://pf.kakao.com/_Frkxjxb/chat"
 				}
 			],
-			"text": "친구 추가하고 새로운 미션을 받을까?",
+			"text": "심심한 친구에게 공유하기 http://bit.ly/39RyGwx",
 			"title": "탈출 실패"
 		},
 		"joined": 0,
@@ -96,13 +96,107 @@
 	},
 	{
 		"_id": "room02",
-		"roomStyle": "nature",
-		"escape": 10,
-		"joined": 15,
-		"limit": 60,
-		"name": "탈출2",
-		"state": "deactivated",
-		"steps": [],
+		"roomStyle": "basic",
+		"escape": 0,
+		"failView": {
+			"buttons": [
+				{
+					"image": "https://github.com/JeongYucheol/23-52storage/blob/master/icons/kakao.png?raw=true",
+					"name": "failed",
+					"url": "http://pf.kakao.com/_Frkxjxb/chat"
+				}
+			],
+			"text": "친구 추가하고 새로운 미션을 받을까?",
+			"title": "탈출 실패"
+		},
+		"joined": 0,
+		"limit": 30,
+		"name": "탈출",
+		"state": "activated",
+		"steps": [
+			{
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/2-1.jpg?raw=true",
+				"input": [],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question2-1.png?raw=true",
+				"text": "그 메일이었던 것 같다. 이 불행의 시작은.."
+			},
+			{
+				"answer": "1000",
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/2-2.jpg?raw=true",
+				"input": [
+					{
+						"type": "text"
+					}
+				],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question2-2.png?raw=true",
+				"text": "... E - 메일을 열려면 패스워드를 입력하시오? 물음표를 적으면 될까?"
+			},
+			{
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/2-4.jpg?raw=true",
+				"input": [],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question2-3.png?raw=true",
+				"text": "메일은 한 단체에서 온 초대장이었다."
+			},
+			{
+				"answer": "5",
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/2-4.jpg?raw=true",
+				"input": [
+					{
+						"type": "text"
+					}
+				],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question2-4.png?raw=true",
+				"text": "주소가 이상하네.. 개포동 몇 번지라는 거지?"
+			},
+			{
+				"answer": "25",
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/2-4.jpg?raw=true",
+				"input": [
+					{
+						"type": "text"
+					}
+				],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question2-5.png?raw=true",
+				"text": "날짜는 또 뭐야?..더 궁금해지는 모임이군.."
+			},
+			{
+				"answer": "10604",
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/2-4.jpg?raw=true",
+				"input": [
+					{
+						"type": "text"
+					}
+				],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question2-6.png?raw=true",
+				"text": "뭐..뭐라는거야? 그래서 내 \"ID Number\" 가 몇 번이라는 거야?" 
+			},
+			{
+				"answer": "plzwashhand",
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/2-4.jpg?raw=true",
+				"input": [
+					{
+						"type": "text"
+					}
+				],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question2-7.png?raw=true",
+				"text": "뭐야..? 패스워드까지 있다고? 흠.."
+			}
+		],
+		"successView": {
+			"buttons": [
+				{
+					"image": "https://github.com/JeongYucheol/23-52storage/blob/master/icons/kakao.png?raw=true",
+					"name": "success",
+					"url": "http://pf.kakao.com/_Frkxjxb/chat"
+				}
+			],
+		
+			"text": "심심한 친구에게 공유하기 http://bit.ly/39RyGwx",
+			"title": "대단하군"
+		},
 		"thumbnail": "https://github.com/JeongYucheol/23-52storage/blob/master/images/thum2.jpg?raw=true"
 	}
+	
+	
+
 ]

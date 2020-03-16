@@ -4,6 +4,7 @@ import close               from '../../../lib/icons/close';
 import kakao               from '../../../lib/icons/kakaoplus';
 import instagram           from '../../../lib/icons/instagram';
 import S                   from './styles';
+import copy from 'copy-to-clipboard';
 
 
 const Header = (props) => {
@@ -20,14 +21,6 @@ const Header = (props) => {
 				<ul>
 					<li>
 						<h3>문의하기</h3>
-						<S.Kakao src={kakao} />
-						<S.Text>
-							카카오톡 친구추가 -
-						</S.Text>
-						<S.Text>
-							23시52분
-						</S.Text>
-
 						<a href="https://www.instagram.com/23h52m_/" target="_blank">
 							<S.Instagram>
 								<img src={instagram} />
@@ -36,6 +29,11 @@ const Header = (props) => {
 								</span>
 							</S.Instagram>
 						</a>
+					</li>
+					<li>
+						<h3>공유하기</h3>
+						copy('http://bit.ly/39RyGwx')
+
 					</li>
 				</ul>
 			</S.Menu>
