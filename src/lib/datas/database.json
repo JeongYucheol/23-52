@@ -2,7 +2,7 @@
 	{
 		"_id": "room01",
 		"roomStyle": "basic",
-		"escape": 0,
+		"escape": 150,
 		"failView": {
 			"buttons": [
 				{
@@ -11,10 +11,10 @@
 					"url": "http://pf.kakao.com/_Frkxjxb/chat"
 				}
 			],
-			"text": "심심한 친구에게 공유하기 http://bit.ly/39RyGwx",
+			"text": "따지러가기",
 			"title": "탈출 실패"
 		},
-		"joined": 0,
+		"joined": 200,
 		"limit": 30,
 		"name": "탈출",
 		"state": "activated",
@@ -89,7 +89,7 @@
 					"url": "http://pf.kakao.com/_Frkxjxb/chat"
 				}
 			],
-			"text": "친구 추가하고 새로운 미션을 받을까?",
+			"text": "화면 캡쳐해서 자랑하기",
 			"title": "대단하군"
 		},
 		"thumbnail": "https://github.com/JeongYucheol/23-52storage/blob/master/images/thum.jpg?raw=true"
@@ -97,7 +97,7 @@
 	{
 		"_id": "room02",
 		"roomStyle": "basic",
-		"escape": 0,
+		"escape": 20,
 		"failView": {
 			"buttons": [
 				{
@@ -106,12 +106,12 @@
 					"url": "http://pf.kakao.com/_Frkxjxb/chat"
 				}
 			],
-			"text": "친구 추가하고 새로운 미션을 받을까?",
+			"text": "따지러가기",
 			"title": "탈출 실패"
 		},
-		"joined": 0,
+		"joined": 100,
 		"limit": 30,
-		"name": "탈출",
+		"name": "탈출2",
 		"state": "activated",
 		"steps": [
 			{
@@ -168,7 +168,7 @@
 					}
 				],
 				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question2-6.png?raw=true",
-				"text": "뭐..뭐라는거야? 그래서 내 \"ID Number\" 가 몇 번이라는 거야?" 
+				"text": "뭐..뭐라는거야? 그래서 내 \"ID Number\" 가 몇 번이라는 거야?"
 			},
 			{
 				"answer": "PLZWASHHANDS",
@@ -190,13 +190,25 @@
 					"url": "http://pf.kakao.com/_Frkxjxb/chat"
 				}
 			],
-		
-			"text": "심심한 친구에게 공유하기 http://bit.ly/39RyGwx",
+
+			"text": "화면 캡쳐해서 자랑하기",
 			"title": "대단하군"
 		},
 		"thumbnail": "https://github.com/JeongYucheol/23-52storage/blob/master/images/thum2.jpg?raw=true"
+	},
+	{
+		"_id": "room03",
+		"roomStyle": "basic",
+		"escape": 0,
+		"joined": 0,
+		"limit": 30,
+		"name": "탈출3",
+		"state": "deactivated",
+		"steps": [],
+
+		"thumbnail": "https://github.com/JeongYucheol/23-52storage/blob/master/images/thum2.jpg?raw=true"
 	}
-	
-	
+
+
 
 ]

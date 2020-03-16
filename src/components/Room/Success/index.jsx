@@ -1,5 +1,6 @@
 import React from 'react';
 import S     from './styles';
+import instagram           from '../../../lib/icons/instagram';
 
 const Success = ({ data, completeTime }) => {
 
@@ -15,7 +16,7 @@ const Success = ({ data, completeTime }) => {
 					<S.Button
 						key={i}
 					>
-						<a href={button.url} target="_blank"><img src={button.image} /></a>
+						<a href="https://www.instagram.com/23h52m_/" target="_blank"><img src={instagram} /></a>
 					</S.Button>
 				))
 			}
