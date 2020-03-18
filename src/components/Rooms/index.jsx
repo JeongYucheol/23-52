@@ -28,16 +28,16 @@ const Rooms = ({ datas }) => {
               </S.Link>
             }
             {
-              state === 'deactivated' &&
-              <S.Link to={`room/${_id}`}>
-              <S.Room url={thumbnail}>
-                  <S.TextBox>
-                      <S.TimeLimit>{limit}</S.TimeLimit>
-                      <S.Line />
-                      <S.EscapeRatio>탈출비율 {getEscapeRatio({ escape, joined })}%</S.EscapeRatio>
-                  </S.TextBox>
-              </S.Room>
-             </S.Link>
+             //  state === 'deactivated' &&
+             //  <S.Link to={`room/${_id}`}>
+             //  <S.Room url={thumbnail}>
+             //      <S.TextBox>
+             //          <S.TimeLimit>{limit}</S.TimeLimit>
+             //          <S.Line />
+             //          <S.EscapeRatio>탈출비율 {getEscapeRatio({ escape, joined })}%</S.EscapeRatio>
+             //      </S.TextBox>
+             //  </S.Room>
+             // </S.Link>
             }
             {
               state === 'deactivated' &&

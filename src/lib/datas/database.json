@@ -97,7 +97,7 @@
 	{
 		"_id": "room02",
 		"roomStyle": "basic",
-		"escape": 20,
+		"escape": 11,
 		"failView": {
 			"buttons": [
 				{
@@ -195,6 +195,18 @@
 			"title": "대단하군"
 		},
 		"thumbnail": "https://github.com/JeongYucheol/23-52storage/blob/master/images/thum2.jpg?raw=true"
+	},
+	{
+		"_id": "room03",
+		"roomStyle": "basic",
+		"escape": 10,
+		"joined": 100,
+		"limit": 40,
+		"name": "탈출3",
+		"state": "deactivated",
+		"steps": [],
+
+		"thumbnail": "https://github.com/JeongYucheol/23-52storage/blob/master/images/thum4.jpg?raw=true"
 	}
 
 
