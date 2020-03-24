@@ -7,6 +7,8 @@ const Failed = ({ data }) => {
 		<S.Wrapper>
 			<S.Title>{data.title}</S.Title>
 			<S.Description>{data.text}</S.Description>
+			<S.Description>
+			<span>http://bit.ly/39RyGwx</span></S.Description>
 			{
 				data.buttons.map((button, i) => (
 					<S.Button

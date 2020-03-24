@@ -6,7 +6,6 @@ import instagram           from '../../../lib/icons/instagram';
 import S                   from './styles';
 
 
-
 const Header = (props) => {
 
 	const [menuOn, toggleMenu] = useState(false);
@@ -20,8 +19,8 @@ const Header = (props) => {
 			<S.Menu show={menuOn}>
 				<ul>
 					<li>
-						<h3>문의하기</h3>
-						<span>혹은 아이디어 주기</span>
+						<h3>힌트문의</h3>
+						<span>팔로우 + DM</span>
 						<a href="https://www.instagram.com/23h52m_/" target="_blank">
 							<S.Instagram>
 								<img src={instagram} />
@@ -29,12 +28,20 @@ const Header = (props) => {
 									23h52m_
 								</span>
 							</S.Instagram>
+
 						</a>
+					</li>
+					<li><br></br><br></br></li>
+					<li>
+  				<h6>친구에게 공유하기<br></br></h6>
+					<span>http://bit.ly/39RyGwx</span>
 					</li>
 
 				</ul>
+
 			</S.Menu>
 		</S.HeaderWrapper>
+
 	);
 
 };

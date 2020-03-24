@@ -19,7 +19,10 @@ const Success = ({ data, completeTime }) => {
 					</S.Button>
 				))
 			}
+			<S.Description><h6>친구에게 고통주기<br></br></h6>
+			<span>http://bit.ly/39RyGwx</span></S.Description>
 		</S.Wrapper>
+
 	);
 
 };
