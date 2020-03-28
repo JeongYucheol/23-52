@@ -12,7 +12,7 @@ const Room = styled.div`
   background-color: red;
   background: url(${({ url }) => url}) center center;
   background-size: 120%;
-  color: #C2C2C2;
+  color: #ffffff;
   font-weight: 700;
   padding: 10px;
   font-size: 12px;
