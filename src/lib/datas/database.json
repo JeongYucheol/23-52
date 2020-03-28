@@ -199,10 +199,124 @@
 	{
 		"_id": "room03",
 		"roomStyle": "basic",
+		"escape": 11,
+		"failView": {
+			"buttons": [
+				{
+					"image": "https://github.com/JeongYucheol/23-52storage/blob/master/icons/instagram.png?raw=true",
+					"name": "failed",
+					"url": "https://www.instagram.com/23h52m_/"
+				}
+			],
+			"text": "다른친구에게 고통주기",
+			"title": "탈출 실패"
+		},
+		"joined": 100,
+		"limit": 30,
+		"name": "탈출3",
+		"state": "activated",
+		"steps": [
+			{
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/3-1.png?raw=true",
+				"input": [],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question3-1.png?raw=true",
+				"text": "호기심 끝에, 결국 찾아와버렸네.."
+			},
+			{
+				"answer": "PLZWASHHANDS",
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/3-2.png?raw=true",
+				"input": [
+					{
+						"type": "text"
+					}
+				],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question3-2.png?raw=true",
+				"text": "... 입구 패스워드가 뭐라고 그랬더라..?"
+			},
+			{
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/3-3.png?raw=true",
+				"input": [],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question3-3.png?raw=true",
+				"text": "문을 여니, 음산한 공간에 테이블이 보이고 그 위에 안내문이 보인다."
+			},
+			{
+				"answer": "1945",
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/3-4.png?raw=true",
+				"input": [
+					{
+						"type": "text"
+					}
+				],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question3-4.png?raw=true",
+				"text": "안내문 아래로, 잠겨있는 상자 하나가 보인다. 첫번째 미션 시작인가."
+			},
+			{
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/3-5.png?raw=true",
+				"input": [],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question3-5.png?raw=true",
+				"text": "안에는 별모양의 숫자’5’와 쪽지 하나가 있었다."
+			},
+			{
+				"answer": "904",
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/3-6.png?raw=true",
+				"input": [
+					{
+						"type": "text"
+					}
+				],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question3-6.png?raw=true",
+				"text": "뒷면에 적혀있는 여러가지 정보들..뭐지? 물음표를 알아내자"
+			},
+			{
+				"answer": "35",
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/3-7.png?raw=true",
+				"input": [
+					{
+						"type": "text"
+					}
+				],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question3-7.png?raw=true",
+				"text": "이런게 저랑 무슨 상관..아, 일단은 물음표를 알아내자."
+			},
+			{
+				"answer": "247080",
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/3-8.png?raw=true",
+				"input": [
+					{
+						"type": "text"
+					}
+				],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question3-8.png?raw=true",
+				"text": "숫자판이 고장이 났었나 보군. 검정 불이 아예 안들어오는 부분이 있네. 제순, 지용, 근택의 나이를 순서대로 기입하자"
+			},
+			{
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/3-9.png?raw=true",
+				"input": [],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question3-9.png?raw=true",
+				"text": "대략적인 정보는 알았고, 일단 방을 둘러볼까."
+			}
+		],
+		"successView": {
+			"buttons": [
+				{
+					"image": "https://github.com/JeongYucheol/23-52storage/blob/master/icons/instagram.png?raw=true",
+					"name": "success",
+					"url": "https://www.instagram.com/23h52m_/"
+				}
+			],
+
+			"text": "퀴즈출제자 응원하러가기",
+			"title": "대단하군"
+		},
+		"thumbnail": "https://github.com/JeongYucheol/23-52storage/blob/master/images/thum3.jpg?raw=true"
+	},
+	{
+		"_id": "room04",
+		"roomStyle": "basic",
 		"escape": 10,
 		"joined": 100,
 		"limit": 40,
-		"name": "탈출3",
+		"name": "탈출4",
 		"state": "deactivated",
 		"steps": [],
 
