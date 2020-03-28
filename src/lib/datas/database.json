@@ -14,7 +14,7 @@
 			"text": "다른친구에게 고통주기",
 			"title": "탈출 실패"
 		},
-		"joined": 200,
+		"joined": 782,
 		"limit": 30,
 		"name": "탈출",
 		"state": "activated",
@@ -199,7 +199,7 @@
 	{
 		"_id": "room03",
 		"roomStyle": "basic",
-		"escape": 11,
+		"escape": 5,
 		"failView": {
 			"buttons": [
 				{
@@ -211,7 +211,7 @@
 			"text": "다른친구에게 고통주기",
 			"title": "탈출 실패"
 		},
-		"joined": 100,
+		"joined": 50,
 		"limit": 30,
 		"name": "탈출3",
 		"state": "activated",

@@ -4,7 +4,7 @@ const Line = styled.div`
 
   width: 58px;
   height: 3px;
-  background-color: #C2C2C2;
+  background-color: #fff;
   margin: 10px 0px;
 
 `;
