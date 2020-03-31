@@ -1,5 +1,56 @@
 [
 	{
+		"_id": "room000",
+		"roomStyle": "basic",
+		"escape": 550,
+		"failView": {
+			"buttons": [
+				{
+					"image": "https://github.com/JeongYucheol/23-52storage/blob/master/icons/instagram.png?raw=true",
+					"name": "failed",
+					"url": "https://www.instagram.com/23h52m_/"
+				}
+			],
+			"text": "다른친구도 테스트하기",
+			"title": "거짓말에 놀아날 운명이군."
+		},
+		"joined": 782,
+		"limit": 4,
+		"name": "탈출",
+		"state": "activated",
+		"steps": [
+			{
+				"answer": "방탈의민족소탈행",
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/s4_1_1.png?raw=true",
+				"input": [
+					{
+						"type": "text"
+					}
+				],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question4_1_1s.png?raw=true",
+				"text": "우리중에 배신행위를 한 사람이 있다. 세명은 거짓말을 하고 한명은 진실을 말했다. 진술을 보고 판단해보자. 배신자와 진실을 말한 사람의 이름을 차례대로 띄움없이 쓰자!"
+			},
+			{
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/s4_1_2.png?raw=true",
+				"input": [],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question4_1_2s.png?raw=true",
+				"text": "인스타그램 DM 좌표는 메뉴버튼이나 다음장에 "
+			}
+			],
+		"successView": {
+			"buttons": [
+				{
+					"image": "https://github.com/JeongYucheol/23-52storage/blob/master/icons/instagram.png?raw=true",
+					"name": "success",
+					"url": "https://www.instagram.com/23h52m_/"
+				}
+			],
+			"text": "퀴즈출제자 응원하러가기",
+			"title": "거짓말분별능력최고"
+		},
+		"thumbnail": "https://github.com/JeongYucheol/23-52storage/blob/master/images/thum_s4_.png?raw=true"
+	},
+	{
 		"_id": "room01",
 		"roomStyle": "basic",
 		"escape": 150,
