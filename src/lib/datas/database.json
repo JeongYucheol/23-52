@@ -20,6 +20,12 @@
 		"state": "activated",
 		"steps": [
 			{
+				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/s4_1_1.png?raw=true",
+				"input": [],
+				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question4_1_1s copy.png?raw=true",
+				"text": "과연? "
+			},
+			{
 				"answer": "방탈의민족소탈행",
 				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/s4_1_1.png?raw=true",
 				"input": [
