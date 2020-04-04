@@ -51,7 +51,7 @@
 					}
 				],
 				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question4-4.png?raw=true",
-				"text": "시계 아래엔 메세지 하나가 있었다. 나의 시간? 밑에 문장을 참고하면 시간이 나올까? 흠.. 시침을 어디로 옮겨야하는 거지?(숫자만입력해보자!)"
+				"text": "시계 아래엔 메시지 하나가 있었다. 나의 시간? 밑에 문장을 참고하면 시간이 나올까? 흠.. 시침을 어디로 옮겨야하는 거지?(숫자만입력해보자!)"
 			},
 			{
 				"image": "https://github.com/JeongYucheol/23-52storage/blob/master/images/4-5.png?raw=true",
@@ -96,7 +96,7 @@
 					}
 				],
 				"question": "https://github.com/JeongYucheol/23-52storage/blob/master/images/question4-9.png?raw=true",
-				"text": "동서남북..뭐..뭐랬더라? 그게 도움되는 걸까? 이게 다음 방에 비밀번호 겠군."
+				"text": "동서남북..뭐..뭐랬더라? 그게 도움되는 걸까? 이게 다음 방의 비밀번호 겠군."
 			}
 		],
 		"successView": {
